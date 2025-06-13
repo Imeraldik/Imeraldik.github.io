@@ -1,0 +1,93 @@
+body, html {
+    height: 100%;
+    padding: 0;
+}
+header{
+    background-image:url(dirt.jpg);
+    width: 100%;
+    height: 20%;
+    color:white;
+    font-size: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.header-space {
+    height: 20%;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url(blockdirt.webp);
+    background-size: 100px;
+}
+h1{
+    color: aqua;
+}
+p{
+    color: blanchedalmond;
+    font-size: 30px;
+    font-family: Arial;
+}
+img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    animation: anim2 5s infinite;
+}
+.portal{
+    height:300px;
+    width: 500px;
+    animation: none;
+}
+@keyframes ani3 {
+    0%{
+        transform: rotate(0deg) translate(0);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: translate(1825px) rotate(45deg);
+    }
+}
+.sword{
+    animation: ani3 5s infinite;
+}
+@keyframes anim2 {
+    0%{
+        transform:translate(0px) rotate(0deg) ;
+    }
+    50%{
+        transform:translate(1700px) rotate(1440deg) ;
+    }
+}
+.sword2{
+    animation:none;
+    rotate: 135deg;
+}
+.arrow{
+    bottom: 5px;
+    left: 10px;
+    animation: anim3 1.6s infinite;
+}
+@keyframes anim3 {
+    0%{
+        /* transform: rotate(45deg) translate(0); */
+        display: none;
+        opacity: 0;
+    }
+    49% {
+        opacity: 0;
+    }
+    50%{
+        transform: rotate(45deg);
+        opacity: 100%;
+    }
+    100%{
+        transform: translate(1825px) rotate(45deg);
+        display:inline-block;
+    }
+}

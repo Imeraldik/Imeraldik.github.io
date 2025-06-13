@@ -1,0 +1,91 @@
+body, html {
+    height: 100%;
+    padding: 0;
+}
+header{
+    background-image:url(dirt.jpg);
+    width: 100%;
+    height: 23%;
+    color:white;
+    font-size: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.header-space {
+    height: 20%;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url(e.webp);
+    background-size: 100px;
+}
+h1{
+    color: green;
+}
+p{
+    color: red;
+    font-size: 30px;
+    font-family: Arial;
+}
+img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    animation: anim2 5s infinite;
+}
+.portal{
+    height:300px;
+    width: 500px;
+    animation: none;
+}
+@keyframes ani3 {
+    0%{
+        transform: rotate(0deg) translate(0);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: translate(1825px) rotate(45deg);
+    }
+}
+.sword{
+    animation: ani3 5s infinite;
+}
+.sword2{
+    animation:none;
+    rotate: 135deg;
+}
+.arrow{
+    bottom: 5px;
+    left: 10px;
+    animation: anim3 1.6s infinite;
+}
+
+.end img {
+    /* display: none; */
+    position: fixed;
+    bottom: -40%;
+    transition: all 0.3s;
+}
+.end:hover img {
+    bottom: 0;
+    display: block;
+}
+.crys{
+    transform: scale(100%) translate(0px);
+    animation: cryst 3s 1;
+}
+@keyframes cryst {
+    0% {
+        transform: scale(0%) translate(1825px);
+    }
+ 100%{
+    transform: scale(100%) translate(0px);
+ }
+
+}
